@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--====== Title ======-->
+    <title>Safe Wallet</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="./user_landing/assets/images/favicon.png" type="image/png">
+
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+<!-- <link rel="stylesheet" href="./user_landing/asset/css/style.css" -->
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="form" >
+      
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab"><a href="#login">Log In</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Safe Wallet Parent</h1>
+          
+          <form action="signup.php" method="POST">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+              <input type="text" name="first" required autocomplete="off" />
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input type="text" name="last" required autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+              <label>
+                Phone Number<span class="req">*</span>
+              </label>
+              <input type="phone" name="phone" required autocomplete="off"/>
+            </div>
+
+          <div class="field-wrap">
+            <label>
+              Username<span class="req">*</span>
+            </label>
+            <input type="username" name="username" required autocomplete="off"/>
+          </div>
+
+          
+          <!-- <div class="field-wrap">
+            <label>
+              
+            </br></br>User Type<span class="req">*</span>
+            </label>
+            <select class="select-css" name="type" >
+                <option value="P">Parent</option>
+                <option value="D">Dependent</option>
+            </select>
+          </div> -->
+          
+          <div class="field-wrap">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label>
+            <input type="password" name="password" required autocomplete="off"/>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Re-type your Password<span class="req">*</span>
+            </label>
+            <input type="password" name="re_password" required autocomplete="off"/>
+          </div>
+
+          
+          
+          <button type="submit" class="button button-block"/>Sign up</button>
+          
+          </form>
+
+        </div>
+        
+        <div id="login">   
+          <h1>Parent/Dependent Login</h1>
+          
+          <form action="login.php" method="POST">
+          
+            <div class="field-wrap">
+            <label>
+              Username<span class="req">*</span>
+            </label>
+            <input type="username" name="username" required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password" name="password" required autocomplete="off"/>
+          </div>
+          
+          <!-- <p class="forgot"><a href="#">Forgot Password?</a></p> -->
+          
+          <button class="button button-block"/>Log In</button>
+          
+          </form>
+
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+<!-- partial -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
