@@ -1,13 +1,4 @@
-/*-----------------------------------------------------------------------------------
-
-    Template Name: Start
-    Template URI: UIdeck.com
-    Description: Start | Landing Page for Startup and SaaS Business
-    Author: Uideck
-    Author URI: https://uideck.com/
-    Support: https://uideck.com/support/
-    Version: 1.0
-
+/*
 -----------------------------------------------------------------------------------
 
     CSS INDEX
@@ -22,6 +13,88 @@
 /*===========================
     1. COMMON css 
 ===========================*/
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+}
+label {
+  position: absolute;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  left: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 22px;
+}
+label .req {
+  margin: 2px;
+  color: #0067f4;
+}
+
+label.active {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
+label.active .req {
+  opacity: 0;
+}
+
+label.highlight {
+  color: #ffffff;
+}
+
+input, textarea {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 4px;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+input:focus, textarea:focus {
+  outline: 0;
+  border-color: #0067f4;
+  border-radius: 4px;
+}
+
+textarea {
+  border: 2px solid #a0b3b0;
+  resize: vertical;
+}
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.top-row > div:last-child {
+  margin: 0;
+}
+
+
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800");
 body {
   font-family: "Poppins", sans-serif;
@@ -103,6 +176,19 @@ p {
   width: 100%;
   height: 100%; }
 
+  #hellbtn {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-image: -webkit-linear-gradient(left, #0067f4, #2bb3dc);
+      background-image: -o-linear-gradient(left, #0067f4, #2bdbdc);
+      background-image: linear-gradient(to right, #0067f4, #2bb3dc);
+      background-position: right center;
+      z-index: -1;
+  }    
 /*===== All Button Style =====*/
 .main-btn {
   display: inline-block;
@@ -414,6 +500,73 @@ p {
               -o-transition: all none ease-out 0s;
               transition: all none ease-out 0s; }
           .header-hero .header-content .header-btn li a.main-btn.btn-two:hover {
+            -webkit-box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.16);
+            -moz-box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.16);
+            box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.16); }
+          .header-hero .header-content .header-btn li a.main-btn.btn-one::before {
+              position: absolute;
+              content: '';
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+              background-image: -webkit-linear-gradient(left, #0067f4, #2bb3dc);
+              background-image: -o-linear-gradient(left, #0067f4, #2bdbdc);
+              background-image: linear-gradient(to right, #0067f4, #2bb3dc);
+              background-position: right center;
+              z-index: -1;
+              -webkit-transition: all 0.3s ease-out 0s;
+              -moz-transition: all 0.3s ease-out 0s;
+              -ms-transition: all 0.3s ease-out 0s;
+              -o-transition: all 0.3s ease-out 0s;
+              transition: all 0.3s ease-out 0s; }
+            .header-hero .header-content .header-btn li a.main-btn.btn-one:hover::before {
+              background-image: -webkit-linear-gradient(right, #0067f4, #0067f4);
+              background-image: -o-linear-gradient(right, #0067f4, #0067f4);
+              background-image: linear-gradient(to left, #0067f4, #0067f4);
+              background-position: left center;
+              -webkit-transition: all none ease-out 0s;
+              -moz-transition: all none ease-out 0s;
+              -ms-transition: all none ease-out 0s;
+              -o-transition: all none ease-out 0s;
+              transition: all none ease-out 0s; }
+          .header-hero .header-content .header-btn li a.main-btn.btn-two:hover {
+            -webkit-box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.16);
+            -moz-box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.16);
+            box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.16); }
+
+
+
+
+
+            .header-hero .header-content .header-btn button.main-btn.btn-one::before {
+              position: absolute;
+              content: '';
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+              background-image: -webkit-linear-gradient(left, #0067f4, #2bb3dc);
+              background-image: -o-linear-gradient(left, #0067f4, #2bdbdc);
+              background-image: linear-gradient(to right, #0067f4, #2bb3dc);
+              background-position: right center;
+              z-index: -1;
+              -webkit-transition: all 0.3s ease-out 0s;
+              -moz-transition: all 0.3s ease-out 0s;
+              -ms-transition: all 0.3s ease-out 0s;
+              -o-transition: all 0.3s ease-out 0s;
+              transition: all 0.3s ease-out 0s; }
+            .header-hero .header-content .header-btn button.main-btn.btn-one:hover::before {
+              background-image: -webkit-linear-gradient(right, #0067f4, #0067f4);
+              background-image: -o-linear-gradient(right, #0067f4, #0067f4);
+              background-image: linear-gradient(to left, #0067f4, #0067f4);
+              background-position: left center;
+              -webkit-transition: all none ease-out 0s;
+              -moz-transition: all none ease-out 0s;
+              -ms-transition: all none ease-out 0s;
+              -o-transition: all none ease-out 0s;
+              transition: all none ease-out 0s; }
+          .header-hero .header-content .header-btn button.main-btn.btn-two:hover {
             -webkit-box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.16);
             -moz-box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.16);
             box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.16); }
