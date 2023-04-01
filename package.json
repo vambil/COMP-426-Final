@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/vambil/COMP-426-Final#readme",
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   }
 }
